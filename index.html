@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f7fb" />
+    <meta
+      name="description"
+      content="Una guía breve para aprender a trabajar con Codex."
+    />
+    <title>Aprende a usar Codex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar" aria-label="Cabecera">
+        <a class="wordmark" href="#inicio" aria-label="Codex, inicio">
+          <span class="wordmark-icon" aria-hidden="true">C</span>
+          <span>Guía de Codex</span>
+        </a>
+        <span class="topbar-note">Tu espacio para aprender</span>
+      </header>
+
+      <section class="hero" id="inicio" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Empieza aquí</p>
+          <h1 id="page-title">Aprende a usar <span>Codex</span></h1>
+          <p class="intro">
+            Codex es tu compañero para trabajar con código. Cuéntale qué quieres
+            crear o cambiar y te ayudará a explorar, escribir y mejorar tu proyecto.
+          </p>
+          <button class="primary-button" id="tip-button" type="button" aria-controls="tip-panel" aria-expanded="false">
+            <span id="button-label">Ver mi primer consejo</span>
+            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+              <path d="M4.5 10h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <aside class="prompt-card" aria-label="Ejemplo de una petición a Codex">
+          <div class="card-topline">
+            <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="card-label">UN BUEN COMIENZO</span>
+          </div>
+          <div class="prompt-mark" aria-hidden="true">“</div>
+          <p class="prompt-text">Ayúdame a entender cómo está organizado este proyecto.</p>
+          <div class="prompt-footer">
+            <span class="prompt-avatar" aria-hidden="true">C</span>
+            <span>Una petición clara, un paso a la vez</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="tip-panel" id="tip-panel" aria-live="polite" hidden>
+        <div class="tip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M9 18h6m-5 3h4m-2-19a7 7 0 0 0-4.3 12.52c.72.56 1.3 1.3 1.52 2.18h5.56c.22-.88.8-1.62 1.52-2.18A7 7 0 0 0 12 2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div>
+          <p class="tip-kicker">Consejo para empezar</p>
+          <h2>Describe el resultado que buscas</h2>
+          <p class="tip-copy">
+            En vez de pedir “arregla mi código”, prueba con “encuentra por qué el
+            menú no se abre en móvil y propón una solución”. Dar contexto ayuda a
+            Codex a darte una respuesta más útil.
+          </p>
+        </div>
+        <button class="close-button" id="close-tip" type="button" aria-label="Cerrar consejo">
+          <svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+            <path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+          </svg>
+        </button>
+      </section>
+
+      <footer class="page-footer">
+        <span class="footer-line"></span>
+        <p>Empieza con una pregunta. Sigue con curiosidad.</p>
+        <span class="footer-line"></span>
+      </footer>
+    </main>
+  </body>
+</html>
